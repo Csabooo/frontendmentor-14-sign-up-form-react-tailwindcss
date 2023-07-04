@@ -4,9 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
   html {
     @apply font-roboto;
   }
+
+  body {
+    @apply text-dark_slate_grey;
+  }
+
+  h1 {
+    @apply font-bold text-4xl text-charcoal_grey my-4;
+  }
+
+  label {
+    @apply m-0 text-xs font-bold py-2;
+  }
+
+  li {
+    @apply py-2;
+  }
+
+  span {
+    @apply text-xs;
+  }
+  svg {
+    @apply mr-3;
+  }
 }
- */
+
+@layer utilities {
+  .button-bg {
+    @apply bg-dark_slate_grey text-white w-full py-4 rounded-lg font-bold;
+  }
+
+  .inputField {
+    @apply border-2 border-grey rounded-lg p-3 mb-5;
+  }
+}
