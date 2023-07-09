@@ -41,4 +41,8 @@
   .inputField {
     @apply border-2 border-grey rounded-lg p-3 mb-5;
   }
+
+  .inputField.error {
+    @apply border-2 border-tomato bg-red-100 rounded-lg p-3 mb-5;
+  }
 }
