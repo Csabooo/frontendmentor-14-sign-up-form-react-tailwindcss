@@ -13,14 +13,14 @@ function Subscribe() {
     if (validRegex.test(enteredText)) {
       console.log(validRegex.test(enteredText));
       setWarning(
-        <label className="text-green-300 text-right block">Valid</label>
+        <label className="text-green-300 text-right inline-block">Valid</label>
       );
       setValid(true);
       console.log(`isvalid state is ${isValid}`);
     } else {
       console.log(validRegex.test(enteredText));
       setWarning(
-        <label className="text-tomato text-right block">
+        <label className="text-tomato text-right inline-block">
           Valid email requiered
         </label>
       );
@@ -43,7 +43,10 @@ function Subscribe() {
   return (
     <div>
       <form className="flex flex-col" onSubmit={formSubmitHandler}>
-        <label>Email address {enteredWarning}</label>
+        <div className="flex flex-row justify-between py-2">
+          <label>Email address</label>
+          <label>{enteredWarning}</label>
+        </div>
 
         <input
           className={isValid ? "inputField" : "inputField error"}
