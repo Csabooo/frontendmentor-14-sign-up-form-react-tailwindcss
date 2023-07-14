@@ -10,23 +10,31 @@
   }
 
   body {
-    @apply text-dark_slate_grey;
+    @apply text-dark_slate_grey bg-dark_slate_grey xl:bg-dark_slate_grey;
   }
 
   h1 {
-    @apply font-bold text-4xl text-charcoal_grey my-4;
+    @apply font-bold text-5xl  text-charcoal_grey my-4 lg:m-0 lg:p-0;
   }
 
   label {
-    @apply m-0 text-xs font-bold py-2 py-0;
+    @apply m-0 text-xs font-bold;
   }
 
-  li {
-    @apply py-2;
+  ul li {
+    @apply py-2 text-lg;
+  }
+
+  p {
+    @apply: text-lg;
   }
 
   span {
     @apply text-xs;
+  }
+
+  span.bold {
+    @apply text-base font-bold lg:text-xl;
   }
   svg {
     @apply mr-3;
@@ -44,5 +52,9 @@
 
   .inputField.error {
     @apply border-2 border-tomato bg-red-100 rounded-lg p-3 mb-5 placeholder:text-tomato text-tomato;
+  }
+
+  .main.block {
+    display: none;
   }
 }

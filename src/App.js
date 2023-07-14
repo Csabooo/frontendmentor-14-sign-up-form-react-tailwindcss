@@ -1,18 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import Attribution from "./components/Attribution";
 import Article from "./components/Article";
 import Subscribe from "./components/Subscribe";
 import Header from "./components/Header";
+import Success from "./components/Success";
 
 export default function App() {
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [isValid, setIsValid] = useState(true);
+
+  const saveValidState = (isValid) => {
+    setIsValid(isValid);
+  };
+
+  const handleFormSubmit = () => {
+    if (isValid) {
+      setShowSuccess(true);
+    } else {
+      setShowSuccess(false);
+    }
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <Header />
-      <div className="my-6 w-80">
-        <Article />
-        <Subscribe />
-        <Attribution />
-      </div>
+    <div>
+      {showSuccess ? (
+        <div>
+          <Success />
+          {console.log(`Átvitt success: ${showSuccess}`)}
+        </div>
+      ) : (
+        <div className="flex flex-col items-center justify-center h-screen mx-auto">
+          <div className="flex flex-col bg-white justify-center items-center lg:flex-row-reverse lg:rounded-3xl lg:px-4 lg:py-4">
+            <Header />
+            <div className="mx-auto lg:w-2/4">
+              <Article />
+              <Subscribe
+                saveState={saveValidState}
+                onSubmit={handleFormSubmit}
+              />
+              <Attribution />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
