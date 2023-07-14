@@ -5,7 +5,7 @@ function Success() {
   return (
     <div className="flex flex-col xl:flex-row-reverse items-center justify-center h-screen mx-auto w-96 lg:w-[641px]">
       <div className="flex flex-col bg-white justify-center items-center lg:rounded-[40px]">
-        <form action={<App />}>
+        <form action="App.js">
           <div className="my-6 px-6 lg:py-10 lg:px-20">
             <svg
               className="lg:w-[100px] lg:h-[100px]"
