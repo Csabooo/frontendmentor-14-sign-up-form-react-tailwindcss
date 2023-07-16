@@ -1,7 +1,6 @@
 import React from "react";
-import App from "../App";
 
-function Success() {
+function Success(props) {
   return (
     <div className="flex flex-col xl:flex-row-reverse items-center justify-center h-screen mx-auto w-96 lg:w-[641px]">
       <div className="flex flex-col bg-white justify-center items-center lg:rounded-[40px]">
@@ -25,8 +24,8 @@ function Success() {
             <h1 className="mt-10 lg:text-7xl">Thanks for subscribing!</h1>
             <p className="lg:text-xl lg: pt-6">
               A confirmation email has been sent to{" "}
-              <span className="bold">ash@loremcompany.com</span>. Please open it
-              and click the button inside to confirm your subscription
+              <span className="bold">{props.mail}</span>. Please open it and
+              click the button inside to confirm your subscription
             </p>
             <button
               type="submit"

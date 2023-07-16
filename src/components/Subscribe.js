@@ -14,6 +14,10 @@ function Subscribe(props) {
 
     const validRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
+    /* 
+    const validRegex =
+      /^\w+([.-]?\w+)@@[a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)(\w{2,})+$/; */
+
     if (validRegex.test(enteredText)) {
       setWarning(
         <div>
@@ -24,6 +28,7 @@ function Subscribe(props) {
       );
       setValid(true);
       props.onSubmit();
+      props.saveMail(enteredText);
     } else {
       event.preventDefault();
 

@@ -8,9 +8,14 @@ import Success from "./components/Success";
 export default function App() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [isValid, setIsValid] = useState(true);
+  const [emailAddress, saveEmailAddress] = useState(true);
 
   const saveValidState = (isValid) => {
     setIsValid(isValid);
+  };
+
+  const saveEmail = (email) => {
+    saveEmailAddress(email);
   };
 
   const handleFormSubmit = () => {
@@ -25,7 +30,7 @@ export default function App() {
     <div>
       {showSuccess ? (
         <div>
-          <Success />
+          <Success mail={emailAddress} />
           {console.log(`Átvitt success: ${showSuccess}`)}
         </div>
       ) : (
@@ -36,6 +41,7 @@ export default function App() {
               <Article />
               <Subscribe
                 saveState={saveValidState}
+                saveMail={saveEmail}
                 onSubmit={handleFormSubmit}
               />
               <Attribution />
