@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/css/main.f40e5cad.css",
-    "main.js": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.b4f6ea6a.js",
+    "main.js": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.69ccf510.js",
     "static/js/787.035f8e9e.chunk.js": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/787.035f8e9e.chunk.js",
     "index.html": "/frontendmentor-14-sign-up-form-react-tailwindcss/index.html",
     "main.f40e5cad.css.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/css/main.f40e5cad.css.map",
-    "main.b4f6ea6a.js.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.b4f6ea6a.js.map",
+    "main.69ccf510.js.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.69ccf510.js.map",
     "787.035f8e9e.chunk.js.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/787.035f8e9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f40e5cad.css",
-    "static/js/main.b4f6ea6a.js"
+    "static/js/main.69ccf510.js"
   ]
 }
