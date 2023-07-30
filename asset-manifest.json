@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/css/main.f40e5cad.css",
-    "main.js": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.69ccf510.js",
+    "main.js": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.4c649d6f.js",
     "static/js/787.035f8e9e.chunk.js": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/787.035f8e9e.chunk.js",
+    "static/media/illustration-sign-up-mobile.svg": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
+    "static/media/illustration-sign-up-desktop.svg": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
     "index.html": "/frontendmentor-14-sign-up-form-react-tailwindcss/index.html",
     "main.f40e5cad.css.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/css/main.f40e5cad.css.map",
-    "main.69ccf510.js.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.69ccf510.js.map",
+    "main.4c649d6f.js.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/main.4c649d6f.js.map",
     "787.035f8e9e.chunk.js.map": "/frontendmentor-14-sign-up-form-react-tailwindcss/static/js/787.035f8e9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f40e5cad.css",
-    "static/js/main.69ccf510.js"
+    "static/js/main.4c649d6f.js"
   ]
 }
